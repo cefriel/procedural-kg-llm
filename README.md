@@ -7,6 +7,9 @@ This pipeline is able to:
 - extract the **actions** to be performed in each step
 - generate a **knowledge graph** including all triples about the procedure, its steps, actions, and tools, according to an **ontology given as reference**
 
+![PK-CoT-evaluation](https://github.com/cefriel/procedural-kg-llm/assets/36740200/870c9f0e-95d2-4b4a-ad2e-bd280c7e597c)
+
+
 ## Experimental setting
 For our experiments, we:
 - used the GPT-3.5 Turbo model (the [gpt-3.5-turbo-16k version](https://platform.openai.com/docs/models/gpt-3-5-turbo))
