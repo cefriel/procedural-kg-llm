@@ -26,5 +26,5 @@ The notebook also reports the actual pieces of text containing the procedures us
 ### data
 - **json**: this folder contains the input procedures in the original json format
 - **output-ttl**: this folder contains the output turtle KGs generated from the textual procedures
-- **ontology**: this folder contains the demo procedural ontology used in the experiments
+- **ontology**: this folder contains the demo procedural ontology used as reference in the experiments
 
