@@ -23,7 +23,7 @@ We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wik
 ## How to navigate this repository
 ### pk-kg-extraction
 This folder contains:
-- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedures used as input)
+- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedure used as example in the prompt, and the procedures used as input for the LLM)
 - the notebooks xxx
 
 The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
