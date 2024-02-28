@@ -22,17 +22,16 @@ We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wik
 
 ## How to navigate this repository
 ### pk-kg-extraction
-This folder contains the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting
-
-The notebook also reports the actual pieces of text containing the procedures used as input
+This folder contains:
+- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedures used as input)
+- the notebooks xxx
 
 The repository defines a `docker-compose.yml` file to run all the databases and the Jupyter notebooks as containers via Docker. 
-
 The containers can be run all at once or separately.
 
-The notebooks can be executed running the competence-kg-notebook container with the command:
+The notebooks can be executed running the container with the command:
 ```
-docker-compose up --force-recreate competence-kg-notebook
+docker-compose up --force-recreate
 ```
 
 ### data
