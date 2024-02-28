@@ -26,10 +26,10 @@ This folder contains:
 - the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedures used as input)
 - the notebooks xxx
 
-The repository defines a `docker-compose.yml` file to run all the databases and the Jupyter notebooks as containers via Docker. 
+The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
 The containers can be run all at once or separately.
 
-The notebooks can be executed running the container with the command:
+The notebooks can be executed running the container, from the folder with the .yml file, with the command:
 ```
 docker-compose up --force-recreate
 ```
