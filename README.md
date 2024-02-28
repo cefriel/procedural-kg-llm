@@ -28,3 +28,6 @@ The notebook also reports the actual pieces of text containing the procedures us
 - **output-ttl**: this folder contains the output turtle KGs generated from the textual procedures
 - **ontology**: this folder contains the demo procedural ontology used as reference in the experiments
 
+### evaluation
+This folder contains materials and results from the human assessment of the LLM results
+
