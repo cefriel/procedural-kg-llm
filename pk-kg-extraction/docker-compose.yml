@@ -1,0 +1,9 @@
+version: '3'
+services:
+    openai-notebook:
+      image: jupyter/datascience-notebook
+      volumes:
+        - ./:/home/jovyan/work
+      ports:
+        - 8888:8888
+      command: "start-notebook.sh"

@@ -1,0 +1,579 @@
+@prefix po: <http://example.org/procedure-ontology#> . 
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+@prefix ex: <http://example.org#> . 
+
+  
+
+# Procedure 
+
+ex:CookHoneyGlazedParsnips 
+
+    a po:Procedure ; 
+
+    rdfs:label "Cook Honey Glazed Parsnips"^^rdfs:Literal ; 
+
+    po:hasStep ex:CookHoneyGlazedParsnips_step1 , ex:CookHoneyGlazedParsnips_step2 , ex:CookHoneyGlazedParsnips_step3 , ex:CookHoneyGlazedParsnips_step4 , ex:CookHoneyGlazedParsnips_step5 , ex:CookHoneyGlazedParsnips_step6 , ex:CookHoneyGlazedParsnips_step7 , ex:CookHoneyGlazedParsnips_step8 , ex:CookHoneyGlazedParsnips_step9 , ex:CookHoneyGlazedParsnips_step10 , ex:CookHoneyGlazedParsnips_step11 , ex:CookHoneyGlazedParsnips_step12 , ex:CookHoneyGlazedParsnips_step13 , ex:CookHoneyGlazedParsnips_step14 . 
+
+  
+
+# Steps 
+
+ex:CookHoneyGlazedParsnips_step1  
+
+    a po:Step ; 
+
+    rdfs:label "Preheat oven to 160 C (320℉) degrees, for 15 minutes prior to cooking time."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "1"^^rdfs:Literal ; 
+
+    po:hasAction ex:Preheat ; 
+
+    po:hasTool ex:Oven ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step2 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step2  
+
+    a po:Step ; 
+
+    rdfs:label "Grease the roasting tray."^^rdfs:Literal ; 
+
+    po:stepNumber "2"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:hasAction ex:Grease ; 
+
+    po:hasTool ex:RoastingTray ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step3 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step1 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step3  
+
+    a po:Step ; 
+
+    rdfs:label "Brush and wash parsnips."^^rdfs:Literal ; 
+
+    po:stepNumber "3"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:hasAction ex:Brush , ex:Wash ; 
+
+    po:hasTool ex:Brush ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step4 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step2 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step4  
+
+    a po:Step ; 
+
+    rdfs:label "Remove the tops about 6mm (1/4 inch), with the leafy part -- and trim off any roots/and the very tip."^^rdfs:Literal ; 
+
+    po:stepNumber "4"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:hasAction ex:Remove , ex:Trim ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step5 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step3 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step5  
+
+    a po:Step ; 
+
+    rdfs:label "Slice the parsnips lengthwise: Most are shaped like carrots, but some are bulbous like turnips (either kind is creamy white but may have a purplish skin)."^^rdfs:Literal ; 
+
+    po:stepNumber "5"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:hasAction ex:Slice ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step6 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step4 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step6  
+
+    a po:Step ; 
+
+    rdfs:label "Put the slices in the center of the wire rack in a roasting tray."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "6"^^rdfs:Literal ; 
+
+    po:hasAction ex:Put ; 
+
+    po:hasTool ex:WireRack ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step7 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step5 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step7  
+
+    a po:Step ; 
+
+    rdfs:label "Add other selected vegetables that you have cut into chunks."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "7"^^rdfs:Literal ; 
+
+    po:hasAction ex:Add ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step8 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step6 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step8  
+
+    a po:Step ; 
+
+    rdfs:label "Spread other vegetables if desired around the parsnips on the wire rack that is in the roasting tray."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "8"^^rdfs:Literal ; 
+
+    po:hasAction ex:Spread ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step9 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step7 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step9  
+
+    a po:Step ; 
+
+    rdfs:label "Bake. Maximum cooking time is 35 minutes."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "9"^^rdfs:Literal ; 
+
+    po:hasAction ex:Bake ; 
+
+    po:hasTool ex:Oven ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step10 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step8 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step10  
+
+    a po:Step ; 
+
+    rdfs:label "Turn the vegetables regularly during cooking to allow even heating without burning the vegetables."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "10"^^rdfs:Literal ; 
+
+    po:hasAction ex:Turn ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step11 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step9 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step11  
+
+    a po:Step ; 
+
+    rdfs:label "Add salt and black pepper about 25 minutes into cooking."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "11"^^rdfs:Literal ; 
+
+    po:hasAction ex:Add ; 
+
+    po:hasTool ex:Salt , ex:BlackPepper ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step12 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step10 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step12  
+
+    a po:Step ; 
+
+    rdfs:label "Make the honey glaze."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "12"^^rdfs:Literal ; 
+
+    po:hasAction ex:Make ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step13 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step11 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step13  
+
+    a po:Step ; 
+
+    rdfs:label "Warm the jar of honey in very hot water, then empty it into a bowl and stir in the butter or margarine."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "13"^^rdfs:Literal ; 
+
+    po:hasAction ex:Warm , ex:Empty , ex:Stir ; 
+
+    po:hasTool ex:Jar , ex:HotWater , ex:Bowl , ex:Spoon , ex:Butter , ex:Margarine ; 
+
+    po:hasNextStep ex:CookHoneyGlazedParsnips_step14 ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step12 . 
+
+  
+
+ex:CookHoneyGlazedParsnips_step14  
+
+    a po:Step ; 
+
+    rdfs:label "Dribble the glaze from a spoon onto the vegetables to finish off the parsnips."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CookHoneyGlazedParsnips ; 
+
+    po:stepNumber "14"^^rdfs:Literal ; 
+
+    po:hasAction ex:Dribble ; 
+
+    po:hasTool ex:Spoon ; 
+
+    po:hasPreviousStep ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+# Tools 
+
+ex:Oven 
+
+    a po:Tool ; 
+
+    rdfs:label "Oven."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step1 , ex:CookHoneyGlazedParsnips_step9 . 
+
+  
+
+ex:RoastingTray 
+
+    a po:Tool ; 
+
+    rdfs:label "Roasting tray."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step2 . 
+
+  
+
+ex:Brush 
+
+    a po:Tool ; 
+
+    rdfs:label "Brush."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step3 . 
+
+  
+
+ex:WireRack 
+
+    a po:Tool ; 
+
+    rdfs:label "Wire rack."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step6 . 
+
+  
+
+ex:Salt 
+
+    a po:Tool ; 
+
+    rdfs:label "Salt."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step11 . 
+
+  
+
+ex:BlackPepper 
+
+    a po:Tool ; 
+
+    rdfs:label "Black pepper."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step11 . 
+
+  
+
+ex:Jar 
+
+    a po:Tool ; 
+
+    rdfs:label "Jar."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:HotWater 
+
+    a po:Tool ; 
+
+    rdfs:label "Hot water."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Bowl 
+
+    a po:Tool ; 
+
+    rdfs:label "Bowl."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Spoon 
+
+    a po:Tool ; 
+
+    rdfs:label "Spoon."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 , ex:CookHoneyGlazedParsnips_step14 . 
+
+  
+
+ex:Butter 
+
+    a po:Tool ; 
+
+    rdfs:label "Butter."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Margarine 
+
+    a po:Tool ; 
+
+    rdfs:label "Margarine."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+# Actions 
+
+ex:Preheat 
+
+    a po:Action ; 
+
+    rdfs:label "Preheat."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step1 . 
+
+  
+
+ex:Grease 
+
+    a po:Action ; 
+
+    rdfs:label "Grease."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step2 . 
+
+  
+
+ex:Brush 
+
+    a po:Action ; 
+
+    rdfs:label "Brush."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step3 . 
+
+  
+
+ex:Wash 
+
+    a po:Action ; 
+
+    rdfs:label "Wash."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step3 . 
+
+  
+
+ex:Remove 
+
+    a po:Action ; 
+
+    rdfs:label "Remove."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step4 . 
+
+  
+
+ex:Trim 
+
+    a po:Action ; 
+
+    rdfs:label "Trim."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step4 . 
+
+  
+
+ex:Slice 
+
+    a po:Action ; 
+
+    rdfs:label "Slice."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step5 . 
+
+  
+
+ex:Put 
+
+    a po:Action ; 
+
+    rdfs:label "Put."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step6 . 
+
+  
+
+ex:Add 
+
+    a po:Action ; 
+
+    rdfs:label "Add."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step7 , ex:CookHoneyGlazedParsnips_step8 , ex:CookHoneyGlazedParsnips_step11 . 
+
+  
+
+ex:Spread 
+
+    a po:Action ; 
+
+    rdfs:label "Spread."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step8 . 
+
+  
+
+ex:Bake 
+
+    a po:Action ; 
+
+    rdfs:label "Bake."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step9 . 
+
+  
+
+ex:Turn 
+
+    a po:Action ; 
+
+    rdfs:label "Turn."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step10 . 
+
+  
+
+ex:Make 
+
+    a po:Action ; 
+
+    rdfs:label "Make."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step12 . 
+
+  
+
+ex:Warm 
+
+    a po:Action ; 
+
+    rdfs:label "Warm."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Empty 
+
+    a po:Action ; 
+
+    rdfs:label "Empty."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Stir 
+
+    a po:Action ; 
+
+    rdfs:label "Stir."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step13 . 
+
+  
+
+ex:Dribble 
+
+    a po:Action ; 
+
+    rdfs:label "Dribble."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CookHoneyGlazedParsnips_step14 . 

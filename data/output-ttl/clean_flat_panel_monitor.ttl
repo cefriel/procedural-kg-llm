@@ -1,0 +1,367 @@
+@prefix po: <http://example.org/procedure-ontology#> . 
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+@prefix ex: <http://example.org#> . 
+
+  
+
+# Procedure 
+
+ex:CleanFlatPanelMonitor 
+
+    a po:Procedure ; 
+
+    rdfs:label "Clean a Flat Panel Monitor"^^rdfs:Literal ; 
+
+    po:hasStep ex:CleanFlatPanelMonitor_step1 , ex:CleanFlatPanelMonitor_step2 , ex:CleanFlatPanelMonitor_step3 , ex:CleanFlatPanelMonitor_step4 , ex:CleanFlatPanelMonitor_step5 , ex:CleanFlatPanelMonitor_step6 , ex:CleanFlatPanelMonitor_step7 , ex:CleanFlatPanelMonitor_step8 , ex:CleanFlatPanelMonitor_step9 , ex:CleanFlatPanelMonitor_step10 , ex:CleanFlatPanelMonitor_step11 . 
+
+  
+
+# Steps 
+
+ex:CleanFlatPanelMonitor_step1  
+
+    a po:Step ; 
+
+    rdfs:label "Purchase a soft cotton cleaning cloth for maintenance."^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:stepNumber "1"^^rdfs:Literal ; 
+
+    po:hasAction ex:Purchase ; 
+
+    po:hasTool ex:SoftCottonCleaningCloth ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step2 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step2  
+
+    a po:Step ; 
+
+    rdfs:label "Keep the cleaning cloth in a dust free area."^^rdfs:Literal ; 
+
+    po:stepNumber "2"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Keep ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step1 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step3 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step3  
+
+    a po:Step ; 
+
+    rdfs:label "Remove any powder that appears on the monitor during shipping."^^rdfs:Literal ; 
+
+    po:stepNumber "3"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Remove ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step2 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step4 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step4  
+
+    a po:Step ; 
+
+    rdfs:label "Use the cloth to wipe up smudges and fingerprints as needed."^^rdfs:Literal ; 
+
+    po:stepNumber "4"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Wipe ; 
+
+    po:hasTool ex:Cloth ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step3 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step5 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step5  
+
+    a po:Step ; 
+
+    rdfs:label "Wipe the cloth across the screen."^^rdfs:Literal ; 
+
+    po:stepNumber "5"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Wipe ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step4 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step6 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step6  
+
+    a po:Step ; 
+
+    rdfs:label "Move it from one side to the other, in one direction, from the top of the screen to the bottom."^^rdfs:Literal ; 
+
+    po:stepNumber "6"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Move ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step5 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step7 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step7  
+
+    a po:Step ; 
+
+    rdfs:label "Dampen the cloth with water to clean more stubborn streaks or smudges."^^rdfs:Literal ; 
+
+    po:stepNumber "7"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Dampen ; 
+
+    po:hasTool ex:Water ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step6 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step8 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step8  
+
+    a po:Step ; 
+
+    rdfs:label "Wring it out thoroughly so that it is slightly damp, not wet."^^rdfs:Literal ; 
+
+    po:stepNumber "8"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Wring ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step7 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step9 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step9  
+
+    a po:Step ; 
+
+    rdfs:label "Make a cleaning solution to clean the flat screen monitor."^^rdfs:Literal ; 
+
+    po:stepNumber "9"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Make ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step8 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step10 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step10  
+
+    a po:Step ; 
+
+    rdfs:label "Mix 1 part diluted isopropyl alcohol to 1 part water."^^rdfs:Literal ; 
+
+    po:stepNumber "10"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Mix ; 
+
+    po:hasTool ex:DilutedIsopropylAlcohol , ex:Water ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step9 ; 
+
+    po:hasNextStep ex:CleanFlatPanelMonitor_step11 . 
+
+  
+
+ex:CleanFlatPanelMonitor_step11  
+
+    a po:Step ; 
+
+    rdfs:label "Spray the solution on the cloth only, never directly on the monitor."^^rdfs:Literal ; 
+
+    po:stepNumber "11"^^rdfs:Literal ; 
+
+    po:isStepOf ex:CleanFlatPanelMonitor ; 
+
+    po:hasAction ex:Spray ; 
+
+    po:hasPreviousStep ex:CleanFlatPanelMonitor_step10 . 
+
+  
+
+# Tools 
+
+ex:SoftCottonCleaningCloth 
+
+    a po:Tool ; 
+
+    rdfs:label "Soft cotton cleaning cloth."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CleanFlatPanelMonitor_step1 . 
+
+  
+
+ex:Cloth 
+
+    a po:Tool ; 
+
+    rdfs:label "Cloth."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CleanFlatPanelMonitor_step4 . 
+
+  
+
+ex:Water 
+
+    a po:Tool ; 
+
+    rdfs:label "Water."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CleanFlatPanelMonitor_step7 . 
+
+  
+
+ex:DilutedIsopropylAlcohol 
+
+    a po:Tool ; 
+
+    rdfs:label "Diluted isopropyl alcohol."^^rdfs:Literal ; 
+
+    po:isToolOf ex:CleanFlatPanelMonitor_step10 . 
+
+  
+
+# Actions 
+
+ex:Purchase 
+
+    a po:Action ; 
+
+    rdfs:label "Purchase."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step1 . 
+
+  
+
+ex:Keep 
+
+    a po:Action ; 
+
+    rdfs:label "Keep."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step2 . 
+
+  
+
+ex:Remove 
+
+    a po:Action ; 
+
+    rdfs:label "Remove."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step3 . 
+
+  
+
+ex:Wipe 
+
+    a po:Action ; 
+
+    rdfs:label "Wipe."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step4 , ex:CleanFlatPanelMonitor_step5 . 
+
+  
+
+ex:Move 
+
+    a po:Action ; 
+
+    rdfs:label "Move."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step6 . 
+
+  
+
+ex:Dampen 
+
+    a po:Action ; 
+
+    rdfs:label "Dampen."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step7 . 
+
+  
+
+ex:Wring 
+
+    a po:Action ; 
+
+    rdfs:label "Wring."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step8 . 
+
+  
+
+ex:Make 
+
+    a po:Action ; 
+
+    rdfs:label "Make."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step9 . 
+
+  
+
+ex:Mix 
+
+    a po:Action ; 
+
+    rdfs:label "Mix."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step10 . 
+
+  
+
+ex:Spray 
+
+    a po:Action ; 
+
+    rdfs:label "Spray."^^rdfs:Literal ; 
+
+    po:isActionOf ex:CleanFlatPanelMonitor_step11 . 

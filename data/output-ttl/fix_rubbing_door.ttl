@@ -1,0 +1,529 @@
+@prefix po: <http://example.org/procedure-ontology#> . 
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+@prefix ex: <http://example.org#> . 
+
+  
+
+# Procedure 
+
+ex:FixRubbingDoor 
+
+    a po:Procedure ; 
+
+    rdfs:label "Fix a Rubbing Door"^^rdfs:Literal ; 
+
+    po:hasStep ex:FixRubbingDoor_step1 , ex:FixRubbingDoor_step2 , ex:FixRubbingDoor_step3 , ex:FixRubbingDoor_step4 , ex:FixRubbingDoor_step5 , ex:FixRubbingDoor_step6 , ex:FixRubbingDoor_step7 , ex:FixRubbingDoor_step8 , ex:FixRubbingDoor_step9 , ex:FixRubbingDoor_step10 , ex:FixRubbingDoor_step11 , ex:FixRubbingDoor_step12 , ex:FixRubbingDoor_step13 , ex:FixRubbingDoor_step14 , ex:FixRubbingDoor_step15 , ex:FixRubbingDoor_step16 . 
+
+  
+
+# Steps 
+
+ex:FixRubbingDoor_step1  
+
+    a po:Step ; 
+
+    rdfs:label "Check to see if the screws in the hinge plate are tight."^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:stepNumber "1"^^rdfs:Literal ; 
+
+    po:hasAction ex:Check ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step2 . 
+
+  
+
+ex:FixRubbingDoor_step2  
+
+    a po:Step ; 
+
+    rdfs:label "Give them a little twist with a ratcheting screwdriver."^^rdfs:Literal ; 
+
+    po:stepNumber "2"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Twist ; 
+
+    po:hasTool ex:RatchetingScrewdriver ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step3 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step1 . 
+
+  
+
+ex:FixRubbingDoor_step3  
+
+    a po:Step ; 
+
+    rdfs:label "Lift the door by grasping both handles and gently putting upward pressure."^^rdfs:Literal ; 
+
+    po:stepNumber "3"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Lift ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step4 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step2 . 
+
+  
+
+ex:FixRubbingDoor_step4  
+
+    a po:Step ; 
+
+    rdfs:label "Check to see if this relieves the rubbing."^^rdfs:Literal ; 
+
+    po:stepNumber "4"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Check ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step5 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step3 . 
+
+  
+
+ex:FixRubbingDoor_step5  
+
+    a po:Step ; 
+
+    rdfs:label "If it does, tighten the hinge screws with a ratcheting screwdriver."^^rdfs:Literal ; 
+
+    po:stepNumber "5"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Tighten ; 
+
+    po:hasTool ex:RatchetingScrewdriver ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step6 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step4 . 
+
+  
+
+ex:FixRubbingDoor_step6  
+
+    a po:Step ; 
+
+    rdfs:label "Examine the door and the doorjamb to determine where the door is rubbing."^^rdfs:Literal ; 
+
+    po:stepNumber "6"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Examine ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step7 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step5 . 
+
+  
+
+ex:FixRubbingDoor_step7  
+
+    a po:Step ; 
+
+    rdfs:label "Look for paint that has been worn away by the door."^^rdfs:Literal ; 
+
+    po:stepNumber "7"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Look ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step8 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step6 . 
+
+  
+
+ex:FixRubbingDoor_step8  
+
+    a po:Step ; 
+
+    rdfs:label "Use a stepladder to look at the top of the door."^^rdfs:Literal ; 
+
+    po:stepNumber "8"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Use ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step9 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step7 . 
+
+  
+
+ex:FixRubbingDoor_step9  
+
+    a po:Step ; 
+
+    rdfs:label "Swing the door back and forth to see if it is rubbing against the carpet or making marks on the floor."^^rdfs:Literal ; 
+
+    po:stepNumber "9"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Swing ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step10 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step8 . 
+
+  
+
+ex:FixRubbingDoor_step10  
+
+    a po:Step ; 
+
+    rdfs:label "Mark the door with a pencil at the spot that it rubs."^^rdfs:Literal ; 
+
+    po:stepNumber "10"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Mark ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step11 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step9 . 
+
+  
+
+ex:FixRubbingDoor_step11  
+
+    a po:Step ; 
+
+    rdfs:label "Remove the door from its hinges with a narrow screwdriver or awl and hammer to tap out the hinges."^^rdfs:Literal ; 
+
+    po:stepNumber "11"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Remove , ex:Tap ; 
+
+    po:hasTool ex:NarrowScrewdriver , ex:Awl , ex:Hammer ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step12 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step10 . 
+
+  
+
+ex:FixRubbingDoor_step12  
+
+    a po:Step ; 
+
+    rdfs:label "Apply masking tape to the door before cutting or sanding."^^rdfs:Literal ; 
+
+    po:stepNumber "12"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Apply ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step13 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step11 . 
+
+  
+
+ex:FixRubbingDoor_step13  
+
+    a po:Step ; 
+
+    rdfs:label "Use sandpaper, a belt sander, or circular saw to remove the area where the door rubs."^^rdfs:Literal ; 
+
+    po:stepNumber "13"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Remove ; 
+
+    po:hasTool ex:Sandpaper , ex:BeltSander , ex:CircularSaw ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step14 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step12 . 
+
+  
+
+ex:FixRubbingDoor_step14  
+
+    a po:Step ; 
+
+    rdfs:label "Rehang the door, and check for rubbing."^^rdfs:Literal ; 
+
+    po:stepNumber "14"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Rehang , ex:Check ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step15 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step13 . 
+
+  
+
+ex:FixRubbingDoor_step15  
+
+    a po:Step ; 
+
+    rdfs:label "Remove the tape."^^rdfs:Literal ; 
+
+    po:stepNumber "15"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:Remove ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step16 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step14 . 
+
+  
+
+ex:FixRubbingDoor_step16  
+
+    a po:Step ; 
+
+    rdfs:label "Touch up the door with paint, stain, or varnish if needed."^^rdfs:Literal ; 
+
+    po:stepNumber "16"^^rdfs:Literal ; 
+
+    po:isStepOf ex:FixRubbingDoor ; 
+
+    po:hasAction ex:TouchUp ; 
+
+    po:hasNextStep ex:FixRubbingDoor_step17 ; 
+
+    po:hasPreviousStep ex:FixRubbingDoor_step15 . 
+
+  
+
+# Tools 
+
+ex:RatchetingScrewdriver 
+
+    a po:Tool ; 
+
+    rdfs:label "Ratcheting screwdriver."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step2 , ex:FixRubbingDoor_step5 . 
+
+  
+
+ex:NarrowScrewdriver 
+
+    a po:Tool ; 
+
+    rdfs:label "Narrow screwdriver."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step11 . 
+
+  
+
+ex:Awl 
+
+    a po:Tool ; 
+
+    rdfs:label "Awl."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step11 . 
+
+  
+
+ex:Hammer 
+
+    a po:Tool ; 
+
+    rdfs:label "Hammer."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step11 . 
+
+  
+
+ex:Sandpaper 
+
+    a po:Tool ; 
+
+    rdfs:label "Sandpaper."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step13 . 
+
+  
+
+ex:BeltSander 
+
+    a po:Tool ; 
+
+    rdfs:label "Belt sander."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step13 . 
+
+  
+
+ex:CircularSaw 
+
+    a po:Tool ; 
+
+    rdfs:label "Circular saw."^^rdfs:Literal ; 
+
+    po:isToolOf ex:FixRubbingDoor_step13 . 
+
+  
+
+# Actions 
+
+ex:Check 
+
+    a po:Action ; 
+
+    rdfs:label "Check."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step1 , ex:FixRubbingDoor_step4 . 
+
+  
+
+ex:Twist 
+
+    a po:Action ; 
+
+    rdfs:label "Twist."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step2 . 
+
+  
+
+ex:Lift 
+
+    a po:Action ; 
+
+    rdfs:label "Lift."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step3 . 
+
+  
+
+ex:Tighten 
+
+    a po:Action ; 
+
+    rdfs:label "Tighten."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step5 . 
+
+  
+
+ex:Examine 
+
+    a po:Action ; 
+
+    rdfs:label "Examine."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step6 . 
+
+  
+
+ex:Look 
+
+    a po:Action ; 
+
+    rdfs:label "Look."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step7 . 
+
+  
+
+ex:Use 
+
+    a po:Action ; 
+
+    rdfs:label "Use."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step8 . 
+
+  
+
+ex:Swing 
+
+    a po:Action ; 
+
+    rdfs:label "Swing."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step9 . 
+
+  
+
+ex:Mark 
+
+    a po:Action ; 
+
+    rdfs:label "Mark."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step10 . 
+
+  
+
+ex:Remove 
+
+    a po:Action ; 
+
+    rdfs:label "Remove."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step13 . 
+
+  
+
+ex:Tap 
+
+    a po:Action ; 
+
+    rdfs:label "Tap."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step11 . 
+
+  
+
+ex:Apply 
+
+    a po:Action ; 
+
+    rdfs:label "Apply."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step12 . 
+
+  
+
+ex:Rehang 
+
+    a po:Action ; 
+
+    rdfs:label "Rehang."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step14 . 
+
+  
+
+ex:TouchUp 
+
+    a po:Action ; 
+
+    rdfs:label "Touch up."^^rdfs:Literal ; 
+
+    po:isActionOf ex:FixRubbingDoor_step16 .
