@@ -26,6 +26,15 @@ This folder contains the notebook with the whole pipeline of 7 prompts, based on
 
 The notebook also reports the actual pieces of text containing the procedures used as input
 
+The repository defines a `docker-compose.yml` file to run all the databases and the Jupyter notebooks as containers via Docker. 
+
+The containers can be run all at once or separately.
+
+The notebooks can be executed running the competence-kg-notebook container with the command:
+```
+docker-compose up --force-recreate competence-kg-notebook
+```
+
 ### data
 - **json**: this folder contains the input procedures in the original json format
 - **output-ttl**: this folder contains the output turtle KGs generated from the textual procedures
