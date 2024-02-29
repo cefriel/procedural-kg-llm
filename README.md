@@ -21,10 +21,10 @@ Procedures used in the prompt engineering refinement process, and in the evaluat
 We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wikihow-goal-step)
 
 ## How to navigate this repository
-### pk-kg-extraction
+### pkg-extraction
 This folder contains:
 - the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedure used as example in the prompt, and the procedures used as input for the LLM)
-- the notebooks xxx
+- subfolder **previous-prompt-eng-experiments** contains notebooks with previous experiments during the prompt engineering refinement process
 
 The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
 The containers can be run all at once or separately.
@@ -32,6 +32,14 @@ The containers can be run all at once or separately.
 The notebooks can be executed running the container, from the folder with the .yml file, with the command:
 ```
 docker-compose up --force-recreate
+```
+
+A `credentials.jso`n file should be provided in the main folder with a valid key for the OpenAI API.
+
+```
+{
+    "OPENAI_API_KEY": "PUT_HERE_YOUR_KEY"
+}
 ```
 
 ### data
