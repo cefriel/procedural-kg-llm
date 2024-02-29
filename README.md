@@ -23,8 +23,8 @@ We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wik
 ## How to navigate this repository
 ### pkg-extraction
 This folder contains:
-- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting (the notebook also reports the actual pieces of text containing the procedure used as example in the prompt, and the procedures used as input for the LLM)
-- subfolder **previous-prompt-eng-experiments** contains notebooks with previous experiments during the prompt engineering refinement process
+- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting
+- a subfolder **previous-prompt-eng-experiments** containing the notebooks with previous experiments during the prompt engineering refinement process
 
 The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
 The containers can be run all at once or separately.
@@ -34,7 +34,7 @@ The notebooks can be executed running the container, from the folder with the .y
 docker-compose up --force-recreate
 ```
 
-A `credentials.jso`n file should be provided in the main folder with a valid key for the OpenAI API.
+A `credentials.json` file should be provided in the main folder with a valid key for the OpenAI API.
 
 ```
 {
@@ -42,10 +42,10 @@ A `credentials.jso`n file should be provided in the main folder with a valid key
 }
 ```
 
-### data
-- **json**: this folder contains the input procedures in the original json format
-- **output-ttl**: this folder contains the output turtle KGs generated from the textual procedures
+### data-results
+- **wikihow-json**: this folder contains the input WikiHow procedures in the original json format
 - **ontology**: this folder contains the demo procedural ontology used as reference in the experiments
+- **clean-flat-panel-monitor**, **fix-rubbing-door**, **cook-honey-glazed-parsnips**, **plant-bare-root-tree**: these folders contain input and output data for the 4 procedures
 
 ### evaluation
 This folder contains materials and results from the human assessment of the LLM results
