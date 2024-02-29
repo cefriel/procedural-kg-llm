@@ -46,6 +46,7 @@ A `credentials.json` file should be provided in the main folder with a valid key
 - **wikihow-json**: this folder contains the input WikiHow procedures in the original json format
 - **ontology**: this folder contains the demo procedural ontology used as reference in the experiments
 - **clean-flat-panel-monitor**, **fix-rubbing-door**, **cook-honey-glazed-parsnips**, **plant-bare-root-tree**: these folders contain input and output data for the 4 procedures
+- **previous-prompt-based-experiments**: this folder contains the results of previous experiments during the prompt engineering refinement process
 
 ### evaluation
 This folder contains materials and results from the human assessment of the LLM results
