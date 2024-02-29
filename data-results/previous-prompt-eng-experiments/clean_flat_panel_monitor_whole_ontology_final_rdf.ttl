@@ -1,0 +1,243 @@
+@prefix po: <http://examples/procedure-ontology#> . 
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+  
+
+po:Clean_a_Flat_Panel_Monitor a po:Procedure ; 
+
+    rdfs:label "Clean a Flat Panel Monitor" ; 
+
+    po:hasStep po:Step_1 . 
+
+  
+
+po:Step_1 a po:Step ; 
+
+    rdfs:label "Purchase a soft cotton cleaning cloth for maintenance." ; 
+
+    po:stepNumber "1" ; 
+
+    po:hasNextStep po:Step_2 ; 
+
+    po:hasAction po:Action_1 ; 
+
+    po:hasTool po:Tool_1 . 
+
+  
+
+po:Action_1 a po:Action ; 
+
+    rdfs:label "purchase" . 
+
+  
+
+po:Tool_1 a po:Tool ; 
+
+    rdfs:label "soft cotton cleaning cloth" . 
+
+  
+
+po:Step_2 a po:Step ; 
+
+    rdfs:label "Keep the cleaning cloth in a dust free area." ; 
+
+    po:stepNumber "2" ; 
+
+    po:hasNextStep po:Step_3 ; 
+
+    po:hasAction po:Action_2 . 
+
+  
+
+po:Action_2 a po:Action ; 
+
+    rdfs:label "keep" . 
+
+  
+
+po:Step_3 a po:Step ; 
+
+    rdfs:label "Remove any powder that appears on the monitor during shipping." ; 
+
+    po:stepNumber "3" ; 
+
+    po:hasNextStep po:Step_4 ; 
+
+    po:hasAction po:Action_3 . 
+
+  
+
+po:Action_3 a po:Action ; 
+
+    rdfs:label "remove" . 
+
+  
+
+po:Step_4 a po:Step ; 
+
+    rdfs:label "Use the cloth to wipe up smudges and fingerprints as needed." ; 
+
+    po:stepNumber "4" ; 
+
+    po:hasNextStep po:Step_5 ; 
+
+    po:hasAction po:Action_4 ; 
+
+    po:hasTool po:Tool_2 . 
+
+  
+
+po:Action_4 a po:Action ; 
+
+    rdfs:label "wipe" . 
+
+  
+
+po:Tool_2 a po:Tool ; 
+
+    rdfs:label "cloth" . 
+
+  
+
+po:Step_5 a po:Step ; 
+
+    rdfs:label "Wipe the cloth across the screen." ; 
+
+    po:stepNumber "5" ; 
+
+    po:hasNextStep po:Step_6 ; 
+
+    po:hasAction po:Action_5 . 
+
+  
+
+po:Action_5 a po:Action ; 
+
+    rdfs:label "wipe" . 
+
+  
+
+po:Step_6 a po:Step ; 
+
+    rdfs:label "Move it from one side to the other, in one direction, from the top of the screen to the bottom." ; 
+
+    po:stepNumber "6" ; 
+
+    po:hasNextStep po:Step_7 ; 
+
+    po:hasAction po:Action_6 . 
+
+  
+
+po:Action_6 a po:Action ; 
+
+    rdfs:label "move" . 
+
+  
+
+po:Step_7 a po:Step ; 
+
+    rdfs:label "Dampen the cloth with water to clean more stubborn streaks or smudges." ; 
+
+    po:stepNumber "7" ; 
+
+    po:hasNextStep po:Step_8 ; 
+
+    po:hasAction po:Action_7 ; 
+
+    po:hasTool po:Tool_3 . 
+
+  
+
+po:Action_7 a po:Action ; 
+
+    rdfs:label "dampen" . 
+
+  
+
+po:Tool_3 a po:Tool ; 
+
+    rdfs:label "water" . 
+
+  
+
+po:Step_8 a po:Step ; 
+
+    rdfs:label "Wring it out thoroughly so that it is slightly damp, not wet." ; 
+
+    po:stepNumber "8" ; 
+
+    po:hasNextStep po:Step_9 ; 
+
+    po:hasAction po:Action_8 . 
+
+  
+
+po:Action_8 a po:Action ; 
+
+    rdfs:label "wring" . 
+
+  
+
+po:Step_9 a po:Step ; 
+
+    rdfs:label "Make a cleaning solution to clean the flat screen monitor." ; 
+
+    po:stepNumber "9" ; 
+
+    po:hasNextStep po:Step_10 ; 
+
+    po:hasAction po:Action_9 . 
+
+  
+
+po:Action_9 a po:Action ; 
+
+    rdfs:label "make" . 
+
+  
+
+po:Step_10 a po:Step ; 
+
+    rdfs:label "Mix 1 part diluted isopropyl alcohol to 1 part water." ; 
+
+    po:stepNumber "10" ; 
+
+    po:hasNextStep po:Step_11 ; 
+
+    po:hasAction po:Action_10 ; 
+
+    po:hasTool po:Tool_4 ; 
+
+    po:hasTool po:Tool_3 . 
+
+  
+
+po:Action_10 a po:Action ; 
+
+    rdfs:label "mix" . 
+
+  
+
+po:Tool_4 a po:Tool ; 
+
+    rdfs:label "diluted isopropyl alcohol" . 
+
+  
+
+po:Step_11 a po:Step ; 
+
+    rdfs:label "Spray the solution on the cloth only, never directly on the monitor." ; 
+
+    po:stepNumber "11" ; 
+
+    po:hasAction po:Action_11 . 
+
+  
+
+po:Action_11 a po:Action ; 
+
+    rdfs:label "spray" . 
