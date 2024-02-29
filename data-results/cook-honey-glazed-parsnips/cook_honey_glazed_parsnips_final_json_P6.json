@@ -1,0 +1,83 @@
+{
+    "title": "Cook Honey Glazed Parsnips",
+    "steps": [
+        {
+            "step_title": "Preheat oven to 160 C (320℉) degrees, for 15 minutes prior to cooking time.",
+            "order": "1",
+            "tools": "oven",
+            "actions": "preheat"
+        },
+        {
+            "step_title": "Grease the roasting tray.",
+            "order": "2",
+            "tools": "roasting tray",
+            "actions": "grease"
+        },
+        {
+            "step_title": "Brush and wash parsnips.",
+            "order": "3",
+            "tools": "brush",
+            "actions": "brush;wash"
+        },
+        {
+            "step_title": "Remove the tops about 6mm (1/4 inch), with the leafy part -- and trim off any roots/and the very tip.",
+            "order": "4",
+            "actions": "remove;trim"
+        },
+        {
+            "step_title": "Slice the parsnips lengthwise: Most are shaped like carrots, but some are bulbous like turnips (either kind is creamy white but may have a purplish skin).",
+            "order": "5",
+            "actions": "slice"
+        },
+        {
+            "step_title": "Put the slices in the center of the wire rack in a roasting tray.",
+            "order": "6",
+            "tools": "wire rack",
+            "actions": "put"
+        },
+        {
+            "step_title": "Add other selected vegetables that you have cut into chunks.",
+            "order": "7",
+            "actions": "add"
+        },
+        {
+            "step_title": "Spread other vegetables if desired around the parsnips on the wire rack that is in the roasting tray.",
+            "order": "8",
+            "actions": "spread"
+        },
+        {
+            "step_title": "Bake. Maximum cooking time is 35 minutes.",
+            "order": "9",
+            "tools": "oven",
+            "actions": "bake"
+        },
+        {
+            "step_title": "Turn the vegetables regularly during cooking to allow even heating without burning the vegetables.",
+            "order": "10",
+            "actions": "turn"
+        },
+        {
+            "step_title": "Add salt and black pepper about 25 minutes into cooking.",
+            "order": "11",
+            "tools": "salt;black pepper",
+            "actions": "add"
+        },
+        {
+            "step_title": "Make the honey glaze.",
+            "order": "12",
+            "actions": "make"
+        },
+        {
+            "step_title": "Warm the jar of honey in very hot water, then empty it into a bowl and stir in the butter or margarine.",
+            "order": "13",
+            "tools": "jar;hot water;bowl;spoon;butter;margarine",
+            "actions": "warm;empty;stir"
+        },
+        {
+            "step_title": "Dribble the glaze from a spoon onto the vegetables to finish off the parsnips.",
+            "order": "14",
+            "tools": "spoon",
+            "actions": "dribble"
+        }
+    ]
+}

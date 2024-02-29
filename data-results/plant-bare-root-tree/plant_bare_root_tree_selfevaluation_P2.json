@@ -1,0 +1,50 @@
+{
+    "title": "Plant a Bare Root Tree",
+    "steps": [
+        {
+            "step_title": "Carefully unpack the bare root tree from the container or material it came in.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an unpacking action to perform."
+        },
+        {
+            "step_title": "Be careful not to damage any of the roots during the unpacking process.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning to be careful against something."
+        },
+        {
+            "step_title": "If you do damage a few, nip them off with a pair of sterilized pruners.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a pruning action to perform."
+        },
+        {
+            "step_title": "Set the tree into a bucket filled with water.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a setting action to perform."
+        },
+        {
+            "step_title": "Allow the tree to soak for 4-6 hours prior to planting.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a soaking action to perform."
+        },
+        {
+            "step_title": "Dig a hole slightly larger than the diameter and depth of the tree and soil width.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a digging action to perform."
+        },
+        {
+            "step_title": "Check to be sure there are no large weed roots in the hole you have dug.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a checking action to perform."
+        },
+        {
+            "step_title": "Add your organic material to the hole and mix well.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an adding and mixing action to perform."
+        },
+        {
+            "step_title": "Plant the tree so that where the roots meet the base of the tree.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it is a comment about the planting position."
+        }
+    ]
+}

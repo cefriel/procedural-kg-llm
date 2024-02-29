@@ -1,0 +1,100 @@
+{
+    "title": "Clean a Flat Panel Monitor",
+    "steps": [
+        {
+            "step_title": "Keep it clean to avoid dust and grime buildup.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it is a general statement about the importance of keeping the monitor clean."
+        },
+        {
+            "step_title": "Purchase a soft cotton cleaning cloth for maintenance.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a purchasing action to perform."
+        },
+        {
+            "step_title": "Keep the cleaning cloth in a dust free area.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a keeping action to perform."
+        },
+        {
+            "step_title": "Remove any powder that appears on the monitor during shipping.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a removing action to perform."
+        },
+        {
+            "step_title": "Use the cloth to wipe up smudges and fingerprints as needed.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a wiping action to perform."
+        },
+        {
+            "step_title": "Wipe the cloth across the screen.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a wiping action to perform."
+        },
+        {
+            "step_title": "Move it from one side to the other, in one direction, from the top of the screen to the bottom.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a moving action to perform."
+        },
+        {
+            "step_title": "Dampen the cloth with water to clean more stubborn streaks or smudges.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a dampening action to perform."
+        },
+        {
+            "step_title": "Wring it out thoroughly so that it is slightly damp, not wet.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a wringing action to perform."
+        },
+        {
+            "step_title": "Make a cleaning solution to clean the flat screen monitor.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a making action to perform."
+        },
+        {
+            "step_title": "Mix 1 part diluted isopropyl alcohol to 1 part water.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a mixing action to perform."
+        },
+        {
+            "step_title": "Spray the solution on the cloth only, never directly on the monitor.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a spraying action to perform."
+        },
+        {
+            "step_title": "Use care around the monitor.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a general statement about being careful around the monitor."
+        },
+        {
+            "step_title": "Do not touch it with fingers, pens, pencils or other sharp objects.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning about what not to do."
+        },
+        {
+            "step_title": "Be careful with food or liquid that could splash the monitor.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning about what to be careful with."
+        },
+        {
+            "step_title": "Teach children not to touch the monitor.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a suggestion about what to teach children."
+        },
+        {
+            "step_title": "Tell others how to clean a flat panel monitor if you have other household members or outside cleaning help, make sure they know how to properly clean the monitor.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a suggestion about what to do if you have other household members or outside cleaning help."
+        },
+        {
+            "step_title": "Regular household cleaners should never be used on the monitor screen or frame most are too abrasive and can cause scratching or fading.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning about what not to use."
+        },
+        {
+            "step_title": "Window cleaners like Windex contain ammonia which can cause etching and cloudiness.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning about what not to use."
+        }
+    ]
+}

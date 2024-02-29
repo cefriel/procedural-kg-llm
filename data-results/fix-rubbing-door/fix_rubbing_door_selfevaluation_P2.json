@@ -1,0 +1,125 @@
+{
+    "title": "Fix a Rubbing Door",
+    "steps": [
+        {
+            "step_title": "Check to see if the screws in the hinge plate are tight.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a checking action to perform."
+        },
+        {
+            "step_title": "Give them a little twist with a ratcheting screwdriver.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a twisting action to perform."
+        },
+        {
+            "step_title": "Lift the door by grasping both handles and gently putting upward pressure.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a lifting action to perform."
+        },
+        {
+            "step_title": "Check to see if this relieves the rubbing.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a checking action to perform."
+        },
+        {
+            "step_title": "If it does, tighten the hinge screws with a ratcheting screwdriver.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a tightening action to perform."
+        },
+        {
+            "step_title": "Examine the door and the doorjamb to determine where the door is rubbing.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an examining action to perform."
+        },
+        {
+            "step_title": "Look for paint that has been worn away by the door.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a looking action to perform."
+        },
+        {
+            "step_title": "Use a stepladder to look at the top of the door.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a using action to perform."
+        },
+        {
+            "step_title": "Swing the door back and forth to see if it is rubbing against the carpet or making marks on the floor.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a swinging action to perform."
+        },
+        {
+            "step_title": "Mark the door with a pencil at the spot that it rubs.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a marking action to perform."
+        },
+        {
+            "step_title": "Remove the door from its hinges with a narrow screwdriver or awl and hammer to tap out the hinges.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a removing action to perform."
+        },
+        {
+            "step_title": "You may need someone to help you catch the door.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a suggestion, it provides a possibility of an action to perform, a potential action."
+        },
+        {
+            "step_title": "Apply masking tape to the door before cutting or sanding.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an applying action to perform."
+        },
+        {
+            "step_title": "This will help reduce the chance of the face of the door chipping.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it is a comment about the previous step."
+        },
+        {
+            "step_title": "Use sandpaper, a belt sander, or circular saw to remove the area where the door rubs.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a using action to perform."
+        },
+        {
+            "step_title": "Sandpaper can be used for small rubbing problems, while the belt sander or circular saw are ideal for more extreme door-sticking issues.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it provides additional information about the procedure."
+        },
+        {
+            "step_title": "Be careful not to cut the door too deep or too far.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning to be careful against something."
+        },
+        {
+            "step_title": "Interior doors are often hollow with only 1 inch (2.54 cm) of wood to stabilize the door.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It provides additional information about the procedure."
+        },
+        {
+            "step_title": "Do not remove more than 1/4 to 1/2 of an inch (.64 to 1.27 cm) of wood.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a warning to be careful against something."
+        },
+        {
+            "step_title": "If your door is a solid wood door, you have more leeway in regards to how much wood you can remove.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It provides additional information about the procedure."
+        },
+        {
+            "step_title": "Rehang the door, and check for rubbing.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a rehanging action to perform."
+        },
+        {
+            "step_title": "You may have to remove the door several times to keep it from rubbing; however, this is better than taking too much off.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It is a comment about the previous steps."
+        },
+        {
+            "step_title": "Remove the tape.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a removing action to perform."
+        },
+        {
+            "step_title": "Touch up the door with paint, stain, or varnish if needed.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a touching up action to perform."
+        }
+    ]
+}

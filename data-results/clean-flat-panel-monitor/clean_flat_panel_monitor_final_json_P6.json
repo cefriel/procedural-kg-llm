@@ -1,0 +1,64 @@
+{
+    "title": "Clean a Flat Panel Monitor",
+    "steps": [
+        {
+            "step_title": "Purchase a soft cotton cleaning cloth for maintenance.",
+            "order": "1",
+            "tools": "soft cotton cleaning cloth",
+            "actions": "purchase"
+        },
+        {
+            "step_title": "Keep the cleaning cloth in a dust free area.",
+            "order": "2",
+            "actions": "keep"
+        },
+        {
+            "step_title": "Remove any powder that appears on the monitor during shipping.",
+            "order": "3",
+            "actions": "remove"
+        },
+        {
+            "step_title": "Use the cloth to wipe up smudges and fingerprints as needed.",
+            "order": "4",
+            "tools": "cloth",
+            "actions": "wipe"
+        },
+        {
+            "step_title": "Wipe the cloth across the screen.",
+            "order": "5",
+            "actions": "wipe"
+        },
+        {
+            "step_title": "Move it from one side to the other, in one direction, from the top of the screen to the bottom.",
+            "order": "6",
+            "actions": "move"
+        },
+        {
+            "step_title": "Dampen the cloth with water to clean more stubborn streaks or smudges.",
+            "order": "7",
+            "tools": "water",
+            "actions": "dampen"
+        },
+        {
+            "step_title": "Wring it out thoroughly so that it is slightly damp, not wet.",
+            "order": "8",
+            "actions": "wring"
+        },
+        {
+            "step_title": "Make a cleaning solution to clean the flat screen monitor.",
+            "order": "9",
+            "actions": "make"
+        },
+        {
+            "step_title": "Mix 1 part diluted isopropyl alcohol to 1 part water.",
+            "order": "10",
+            "tools": "diluted isopropyl alcohol;water",
+            "actions": "mix"
+        },
+        {
+            "step_title": "Spray the solution on the cloth only, never directly on the monitor.",
+            "order": "11",
+            "actions": "spray"
+        }
+    ]
+}

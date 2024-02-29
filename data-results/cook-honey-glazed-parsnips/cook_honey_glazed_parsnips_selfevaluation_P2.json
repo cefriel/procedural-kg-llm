@@ -1,0 +1,85 @@
+{
+    "title": "Cook Honey Glazed Parsnips",
+    "steps": [
+        {
+            "step_title": "Preheat oven to 160 C (320℉) degrees, for 15 minutes prior to cooking time.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a preheating action to perform."
+        },
+        {
+            "step_title": "Grease the roasting tray.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a greasing action to perform."
+        },
+        {
+            "step_title": "Or, line it with aluminum foil, to keep juices from burning onto the pan.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it is a suggestion, it provides a possibility of an action to perform, a potential action."
+        },
+        {
+            "step_title": "Brush and wash parsnips.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a brushing and washing action to perform."
+        },
+        {
+            "step_title": "Remove the tops about 6mm (1/4 inch), with the leafy part -- and trim off any roots/and the very tip.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a removing and trimming action to perform."
+        },
+        {
+            "step_title": "Slice the parsnips lengthwise: Most are shaped like carrots, but some are bulbous like turnips (either kind is creamy white but may have a purplish skin).",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a slicing action to perform."
+        },
+        {
+            "step_title": "Put the slices in the center of the wire rack in a roasting tray.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a putting action to perform."
+        },
+        {
+            "step_title": "Add other selected vegetables that you have cut into chunks.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an adding action to perform."
+        },
+        {
+            "step_title": "Spread other vegetables if desired around the parsnips on the wire rack that is in the roasting tray.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a spreading action to perform."
+        },
+        {
+            "step_title": "Bake. Maximum cooking time is 35 minutes.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a baking action to perform."
+        },
+        {
+            "step_title": "Turn the vegetables regularly during cooking to allow even heating without burning the vegetables.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a turning action to perform."
+        },
+        {
+            "step_title": "Add salt and black pepper about 25 minutes into cooking.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about an adding action to perform."
+        },
+        {
+            "step_title": "Make the honey glaze.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a making action to perform."
+        },
+        {
+            "step_title": "Warm the jar of honey in very hot water, then empty it into a bowl and stir in the butter or margarine.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a warming, emptying, and stirring action to perform."
+        },
+        {
+            "step_title": "Dribble the glaze from a spoon onto the vegetables to finish off the parsnips.",
+            "validation": "correct",
+            "reason": "This is an actual step. It provides an instruction about a dribbling action to perform."
+        },
+        {
+            "step_title": "It is nice to try different seasoning and spices combinations with dried herbs, fresh herbs, green onions, chives, chili's.",
+            "validation": "incorrect",
+            "reason": "This is not an actual step. It does not provide an instruction, it is a comment about the previous steps."
+        }
+    ]
+}

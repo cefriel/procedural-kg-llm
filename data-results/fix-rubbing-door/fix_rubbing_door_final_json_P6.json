@@ -1,0 +1,89 @@
+{
+    "title": "Fix a Rubbing Door",
+    "steps": [
+        {
+            "step_title": "Check to see if the screws in the hinge plate are tight.",
+            "order": "1",
+            "actions": "check"
+        },
+        {
+            "step_title": "Give them a little twist with a ratcheting screwdriver.",
+            "order": "2",
+            "tools": "ratcheting screwdriver",
+            "actions": "twist"
+        },
+        {
+            "step_title": "Lift the door by grasping both handles and gently putting upward pressure.",
+            "order": "3",
+            "actions": "lift"
+        },
+        {
+            "step_title": "Check to see if this relieves the rubbing.",
+            "order": "4",
+            "actions": "check"
+        },
+        {
+            "step_title": "If it does, tighten the hinge screws with a ratcheting screwdriver.",
+            "order": "5",
+            "tools": "ratcheting screwdriver",
+            "actions": "tighten"
+        },
+        {
+            "step_title": "Examine the door and the doorjamb to determine where the door is rubbing.",
+            "order": "6",
+            "actions": "examine"
+        },
+        {
+            "step_title": "Look for paint that has been worn away by the door.",
+            "order": "7",
+            "actions": "look"
+        },
+        {
+            "step_title": "Use a stepladder to look at the top of the door.",
+            "order": "8",
+            "actions": "use"
+        },
+        {
+            "step_title": "Swing the door back and forth to see if it is rubbing against the carpet or making marks on the floor.",
+            "order": "9",
+            "actions": "swing"
+        },
+        {
+            "step_title": "Mark the door with a pencil at the spot that it rubs.",
+            "order": "10",
+            "actions": "mark"
+        },
+        {
+            "step_title": "Remove the door from its hinges with a narrow screwdriver or awl and hammer to tap out the hinges.",
+            "order": "11",
+            "tools": "narrow screwdriver;awl;hammer",
+            "actions": "remove;tap"
+        },
+        {
+            "step_title": "Apply masking tape to the door before cutting or sanding.",
+            "order": "12",
+            "actions": "apply"
+        },
+        {
+            "step_title": "Use sandpaper, a belt sander, or circular saw to remove the area where the door rubs.",
+            "order": "13",
+            "tools": "sandpaper;belt sander;circular saw",
+            "actions": "remove"
+        },
+        {
+            "step_title": "Rehang the door, and check for rubbing.",
+            "order": "14",
+            "actions": "rehang;check"
+        },
+        {
+            "step_title": "Remove the tape.",
+            "order": "15",
+            "actions": "remove"
+        },
+        {
+            "step_title": "Touch up the door with paint, stain, or varnish if needed.",
+            "order": "16",
+            "actions": "touch up"
+        }
+    ]
+}
