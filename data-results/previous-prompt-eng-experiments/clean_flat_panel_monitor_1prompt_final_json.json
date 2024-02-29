@@ -1,0 +1,51 @@
+{
+    "title": "How to clean a flat panel monitor",
+    "steps": [
+        {
+            "step_title": "Purchase a soft cotton cleaning cloth for maintenance.",
+            "order": "1",
+            "tools": "soft cotton cleaning cloth",
+            "actions": "purchase"
+        },
+        {
+            "step_title": "Remove any powder that appears on the monitor during shipping.",
+            "order": "2",
+            "tools": "soft cloth",
+            "actions": "remove"
+        },
+        {
+            "step_title": "Use the cloth to wipe up smudges and fingerprints as needed.",
+            "order": "3",
+            "tools": "cloth",
+            "actions": "wipe"
+        },
+        {
+            "step_title": "Wipe the cloth across the screen. Move it from one side to the other, in one direction, from the top of the screen to the bottom.",
+            "order": "4",
+            "tools": "cloth",
+            "actions": "wipe"
+        },
+        {
+            "step_title": "Dampen the cloth with water to clean more stubborn streaks or smudges. Wring it out thoroughly so that it is slightly damp, not wet.",
+            "order": "5",
+            "tools": "cloth",
+            "actions": "dampen;wring"
+        },
+        {
+            "step_title": "Mix 1 part diluted isopropyl alcohol to 1 part water. Spray the solution on the cloth only, never directly on the monitor.",
+            "order": "6",
+            "tools": "isopropyl alcohol;water;cloth",
+            "actions": "mix;spray"
+        },
+        {
+            "step_title": "Teach children not to touch the monitor.",
+            "order": "7",
+            "actions": "teach"
+        },
+        {
+            "step_title": "Tell others how to clean a flat panel monitor if you have other household members or outside cleaning help, make sure they know how to properly clean the monitor.",
+            "order": "8",
+            "actions": "tell"
+        }
+    ]
+}
