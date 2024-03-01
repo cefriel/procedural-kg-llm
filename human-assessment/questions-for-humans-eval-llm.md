@@ -6,6 +6,8 @@
 
 <img alt="overallDivision" src="https://github.com/cefriel/procedural-kg-llm/assets/36740200/00b15bc4-8e02-49ed-b77c-fe91884390c7">
 
+<img alt="Screenshot 2024-03-01 145747" src="https://github.com/cefriel/procedural-kg-llm/assets/36740200/d4d16451-fcf7-4895-a326-0774945b7007">
+
 <img alt="prompt" src="https://github.com/cefriel/procedural-kg-llm/assets/36740200/0af9f9ca-f21c-4802-8e6c-90d524a0bfee">
 
 <img alt="profiling" src="https://github.com/cefriel/procedural-kg-llm/assets/36740200/81c7450d-c40c-4a7e-9c73-0505a93bccc2">
