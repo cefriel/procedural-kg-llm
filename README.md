@@ -21,9 +21,9 @@ Procedures used in the prompt engineering refinement process, and in the evaluat
 We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wikihow-goal-step)
 
 ## How to navigate this repository
-### pkg-extraction
+### pkg-extraction / notebooks
 This folder contains:
-- the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting
+- **pkg-extraction.ipynb**, the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting
 - a subfolder **previous-prompt-eng-experiments** containing the notebooks with previous experiments during the prompt engineering refinement process
 
 The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
@@ -48,6 +48,6 @@ A `credentials.json` file should be provided in the main folder with a valid key
 - **clean-flat-panel-monitor**, **fix-rubbing-door**, **cook-honey-glazed-parsnips**, **plant-bare-root-tree**: these folders contain input and output data for the 4 procedures
 - **previous-prompt-based-experiments**: this folder contains the results of previous experiments during the prompt engineering refinement process
 
-### evaluation
+### human-assessment
 This folder contains materials and results from the human assessment of the LLM results
 
