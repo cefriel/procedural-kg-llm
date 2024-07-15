@@ -1,0 +1,163 @@
+@prefix po: <http://example.org/procedure-ontology#> . 
+@prefix p-plan: <http://purl.org/net/p-plan#> . 
+@prefix khub-proc: <https://knowledge.c-innovationhub.com/k-hub/procedure#> . 
+@prefix frapo: <http://purl.org/cerif/frapo/> . 
+@prefix time: <http://www.w3.org/2006/time#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix ex: <http://example.org#> . 
+
+# Procedure 
+ex:PlantBareRootTree 
+    a p-plan:Plan ; 
+    rdfs:label "How to Plant a Bare Root Tree Procedure"^^rdfs:Literal ; 
+    po:hasStep ex:PlantBareRootTree_step1 , ex:PlantBareRootTree_step2 , ex:PlantBareRootTree_step3 , ex:PlantBareRootTree_step4 , ex:PlantBareRootTree_step5 .  
+
+# Steps 
+ex:PlantBareRootTree_step1  
+    a p-plan:Step ; 
+    rdfs:label "unpack bare root tree from container or material"^^rdfs:Literal ; 
+    rdfs:comment "Carefully unpack the bare root tree from the container or material it came in."^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:PlantBareRootTree ; 
+    po:stepNumber "1"^^rdfs:Literal ; 
+    po:hasAction ex:Unpack ; 
+    po:hasDirectObjectOfAction ex:BareRootTree ; 
+    frapo:usesEquipment ex:Container , ex:Material ; 
+    khub-proc:nextStep ex:PlantBareRootTree_step2 . 
+
+ex:PlantBareRootTree_step2  
+    a p-plan:Step ; 
+    rdfs:label "nip off damaged roots with sterilized pruners"^^rdfs:Literal ; 
+    rdfs:comment "If you do damage a few, nip them off with a pair of sterilized pruners."^^rdfs:Literal ; 
+    po:stepNumber "2"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:PlantBareRootTree ; 
+    po:hasAction ex:NipOff ; 
+    po:hasDirectObjectOfAction ex:DamagedRoots ; 
+    frapo:usesEquipment ex:SterilizedPruners ; 
+    khub-proc:nextStep ex:PlantBareRootTree_step3 ; 
+    p-plan:precededBy ex:PlantBareRootTree_step1 . 
+
+ex:PlantBareRootTree_step3  
+    a p-plan:Step ; 
+    rdfs:label "set tree into bucket filled with water"^^rdfs:Literal ; 
+    rdfs:comment "Set the tree into a bucket filled with water."^^rdfs:Literal ; 
+    po:stepNumber "3"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:PlantBareRootTree ; 
+    po:hasAction ex:Set ; 
+    po:hasDirectObjectOfAction ex:Tree ; 
+    frapo:usesEquipment ex:Bucket , ex:Water ; 
+    khub-proc:nextStep ex:PlantBareRootTree_step4 ; 
+    p-plan:precededBy ex:PlantBareRootTree_step2 . 
+
+ex:PlantBareRootTree_step4  
+    a p-plan:Step ; 
+    rdfs:label "allow tree to soak for 4-6 hours"^^rdfs:Literal ; 
+    rdfs:comment "Allow the tree to soak for 4-6 hours prior to planting."^^rdfs:Literal ; 
+    po:stepNumber "4"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:PlantBareRootTree ; 
+    po:hasAction ex:Allow ; 
+    po:hasDirectObjectOfAction ex:Tree ; 
+    time:hasTime ex:4to6Hours ; 
+    khub-proc:nextStep ex:PlantBareRootTree_step5 ; 
+    p-plan:precededBy ex:PlantBareRootTree_step3 . 
+
+ex:PlantBareRootTree_step5  
+    a p-plan:Step ; 
+    rdfs:label "dig hole larger than diameter and depth of tree and soil width"^^rdfs:Literal ; 
+    rdfs:comment "Dig a hole slightly larger than the diameter and depth of the tree and soil width."^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:PlantBareRootTree ; 
+    po:stepNumber "5"^^rdfs:Literal ; 
+    po:hasAction ex:Dig ; 
+    po:hasDirectObjectOfAction ex:Hole ; 
+    frapo:usesEquipment ex:Shovel ; 
+    p-plan:precededBy ex:PlantBareRootTree_step4 . 
+
+# Temporal Entities 
+ex:4to6Hours 
+    a time:TemporalEntity ; 
+    rdfs:label "4-6 Hours."^^rdfs:Literal ; 
+    po:isTimeOf ex:PlantBareRootTree_step4 . 
+
+# Equipments 
+ex:Container 
+    a frapo:Equipment ; 
+    rdfs:label "Container."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step1 . 
+
+ex:Material 
+    a frapo:Equipment ; 
+    rdfs:label "Material."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step1 . 
+
+ex:SterilizedPruners  
+    a frapo:Equipment ; 
+    rdfs:label "Sterilized Pruners."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step2 . 
+
+ex:Bucket 
+    a frapo:Equipment ; 
+    rdfs:label "Bucket."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step3 . 
+
+ex:Water 
+    a frapo:Equipment ; 
+    rdfs:label "Water."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step3 . 
+
+ex:Shovel 
+    a frapo:Equipment ; 
+    rdfs:label "Shovel."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:PlantBareRootTree_step5 . 
+
+# Actions 
+ex:Unpack  
+    a po:Action ; 
+    rdfs:label "Unpack."^^rdfs:Literal ; 
+    po:isActionOf ex:PlantBareRootTree_step1 . 
+
+ex:NipOff 
+    a po:Action ; 
+    rdfs:label "Nip Off."^^rdfs:Literal ; 
+    po:isActionOf ex:PlantBareRootTree_step2 . 
+
+ex:Set 
+    a po:Action ; 
+    rdfs:label "Set."^^rdfs:Literal ; 
+    po:isActionOf ex:PlantBareRootTree_step3 . 
+
+ex:Allow 
+    a po:Action ; 
+    rdfs:label "Allow."^^rdfs:Literal ; 
+    po:isActionOf ex:PlantBareRootTree_step4 . 
+
+ex:Dig 
+    a po:Action ; 
+    rdfs:label "Dig."^^rdfs:Literal ; 
+    po:isActionOf ex:PlantBareRootTree_step5 . 
+
+# Direct objects of actions 
+ex:BareRootTree 
+    a owl:Thing ; 
+    rdfs:label "Bare Root Tree."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:PlantBareRootTree_step1 . 
+
+ex:DamagedRoots 
+    a owl:Thing ; 
+    rdfs:label "Damaged Roots."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:PlantBareRootTree_step2 . 
+
+ex:Tree 
+    a owl:Thing ; 
+    rdfs:label "Tree."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:PlantBareRootTree_step3 , ex:PlantBareRootTree_step4 . 
+
+ex:Hole 
+    a owl:Thing ; 
+    rdfs:label "Hole."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:PlantBareRootTree_step5 . 
+
+ex:Soil 
+    a owl:Thing ; 
+    rdfs:label "Soil."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:PlantBareRootTree_step5 .

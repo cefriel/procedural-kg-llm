@@ -1,0 +1,279 @@
+@prefix po: <http://example.org/procedure-ontology#> . 
+@prefix p-plan: <http://purl.org/net/p-plan#> . 
+@prefix khub-proc: <https://knowledge.c-innovationhub.com/k-hub/procedure#> . 
+@prefix frapo: <http://purl.org/cerif/frapo/> . 
+@prefix time: <http://www.w3.org/2006/time#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix ex: <http://example.org#> . 
+
+  
+
+# Procedure 
+ex:CookHoneyGlazedParsnips 
+    a p-plan:Plan ; 
+    rdfs:label "How to Cook Honey Glazed Parsnips Procedure"^^rdfs:Literal ; 
+    po:hasStep ex:CookHoneyGlazedParsnips_step1 , ex:CookHoneyGlazedParsnips_step2 , ex:CookHoneyGlazedParsnips_step3 , ex:CookHoneyGlazedParsnips_step4 , ex:CookHoneyGlazedParsnips_step5 , ex:CookHoneyGlazedParsnips_step6 , ex:CookHoneyGlazedParsnips_step7 , ex:CookHoneyGlazedParsnips_step8 , ex:CookHoneyGlazedParsnips_step9 , ex:CookHoneyGlazedParsnips_step10 .  
+
+# Steps 
+ex:CookHoneyGlazedParsnips_step1  
+    a p-plan:Step ; 
+    rdfs:label "preheat oven to 160 C (320℉) degrees for 15 minutes"^^rdfs:Literal ; 
+    rdfs:comment "Preheat oven to 160 C (320℉) degrees, for 15 minutes prior to cooking time."^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:stepNumber "1"^^rdfs:Literal ; 
+    po:hasAction ex:Preheat ; 
+    po:hasDirectObjectOfAction ex:Oven ;
+    time:hasTime ex:15Minutes ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step2 . 
+
+ex:CookHoneyGlazedParsnips_step2  
+    a p-plan:Step ; 
+    rdfs:label "grease roasting tray"^^rdfs:Literal ; 
+    rdfs:comment "Grease the roasting tray."^^rdfs:Literal ; 
+    po:stepNumber "2"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Grease ; 
+    po:hasDirectObjectOfAction ex:RoastingTray ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step3 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step1 . 
+
+ex:CookHoneyGlazedParsnips_step3  
+    a p-plan:Step ; 
+    rdfs:label "line roasting tray with aluminum foil"^^rdfs:Literal ; 
+    rdfs:comment "Or, line it with aluminum foil, to keep juices from burning onto the pan."^^rdfs:Literal ; 
+    po:stepNumber "3"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Line ; 
+    po:hasDirectObjectOfAction ex:RoastingTray ; 
+    frapo:usesEquipment ex:AluminumFoil ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step4 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step2 . 
+
+ex:CookHoneyGlazedParsnips_step4  
+    a p-plan:Step ; 
+    rdfs:label "brush and wash parsnips"^^rdfs:Literal ; 
+    rdfs:comment "Brush and wash parsnips."^^rdfs:Literal ; 
+    po:stepNumber "4"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Brush , ex:Wash ; 
+    po:hasDirectObjectOfAction ex:Parsnips ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step5 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step3 . 
+
+ex:CookHoneyGlazedParsnips_step5  
+    a p-plan:Step ; 
+    rdfs:label "remove tops about 6mm (1/4 inch) with leafy part and trim off roots and very tip"^^rdfs:Literal ; 
+    rdfs:comment "Remove the tops about 6mm (1/4 inch), with the leafy part, and trim off any roots/and the very tip."^^rdfs:Literal ; 
+    po:stepNumber "5"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Remove , ex:TrimOff ; 
+    po:hasDirectObjectOfAction ex:Tops , ex:Roots , ex:VeryTip ; 
+    frapo:usesEquipment ex:Knife ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step6 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step4 . 
+
+ex:CookHoneyGlazedParsnips_step6  
+    a p-plan:Step ; 
+    rdfs:label "slice parsnips lengthwise"^^rdfs:Literal ; 
+    rdfs:comment "Slice the parsnips lengthwise."^^rdfs:Literal ; 
+    po:stepNumber "6"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Slice ; 
+    po:hasDirectObjectOfAction ex:Parsnips ; 
+    frapo:usesEquipment ex:Knife ;
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step7 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:CookHoneyGlazedParsnips_step7  
+    a p-plan:Step ; 
+    rdfs:label "put slices in center of wire rack in roasting tray"^^rdfs:Literal ; 
+    rdfs:comment "Put the slices in the center of the wire rack in a roasting tray."^^rdfs:Literal ; 
+    po:stepNumber "7"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Put ; 
+    po:hasDirectObjectOfAction ex:Slices ; 
+    frapo:usesEquipment ex:WireRack , ex:RoastingTray ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step8 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step6 . 
+
+ex:CookHoneyGlazedParsnips_step8  
+    a p-plan:Step ; 
+    rdfs:label "add other selected vegetables cut into chunks"^^rdfs:Literal ; 
+    rdfs:comment "Add other selected vegetables that you have cut into chunks."^^rdfs:Literal ; 
+    po:stepNumber "8"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Add ; 
+    po:hasDirectObjectOfAction ex:OtherSelectedVegetables ; 
+    frapo:usesEquipment ex:Chunks , ex:Knife ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step9 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step7 . 
+
+ex:CookHoneyGlazedParsnips_step9  
+    a p-plan:Step ; 
+    rdfs:label "spread other vegetables around parsnips on wire rack in roasting tray"^^rdfs:Literal ; 
+    rdfs:comment "Spread other vegetables if desired around the parsnips on the wire rack that is in the roasting tray."^^rdfs:Literal ; 
+    po:stepNumber "9"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Spread ; 
+    po:hasDirectObjectOfAction ex:OtherVegetables ; 
+    frapo:usesEquipment ex:WireRack , ex:RoastingTray ; 
+    khub-proc:nextStep ex:CookHoneyGlazedParsnips_step10 ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step8 . 
+
+ex:CookHoneyGlazedParsnips_step10  
+    a p-plan:Step ; 
+    rdfs:label "bake"^^rdfs:Literal ; 
+    rdfs:comment "Bake."^^rdfs:Literal ; 
+    po:stepNumber "10"^^rdfs:Literal ; 
+    p-plan:isStepOfPlan ex:CookHoneyGlazedParsnips ; 
+    po:hasAction ex:Bake ; 
+    frapo:usesEquipment ex:Oven ; 
+    p-plan:precededBy ex:CookHoneyGlazedParsnips_step9 . 
+
+# Temporal Entities 
+ex:15Minutes 
+    a time:TemporalEntity ; 
+    rdfs:label "15 Minutes."^^rdfs:Literal ; 
+    po:isTimeOf ex:CookHoneyGlazedParsnips_step1 . 
+
+# Equipments 
+ex:AluminumFoil 
+    a frapo:Equipment ; 
+    rdfs:label "Aluminum Foil."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step3 .  
+
+ex:WireRack 
+    a frapo:Equipment ; 
+    rdfs:label "Wire Rack."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step7 , ex:CookHoneyGlazedParsnips_step9 .   
+
+ex:RoastingTray 
+    a frapo:Equipment ; 
+    rdfs:label "Roasting Tray."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step2 , ex:CookHoneyGlazedParsnips_step3 , ex:CookHoneyGlazedParsnips_step7 , ex:CookHoneyGlazedParsnips_step9 . 
+
+ex:Chunks 
+    a frapo:Equipment ; 
+    rdfs:label "Chunks."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step8 . 
+  
+ex:Knife 
+    a frapo:Equipment ; 
+    rdfs:label "Knife."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step5 , ex:CookHoneyGlazedParsnips_step6 , ex:CookHoneyGlazedParsnips_step8 . 
+
+ex:Oven 
+    a frapo:Equipment ; 
+    rdfs:label "Oven."^^rdfs:Literal ; 
+    po:isEquipmentOf ex:CookHoneyGlazedParsnips_step10 . 
+
+# Actions 
+ex:Preheat  
+    a po:Action ; 
+    rdfs:label "Preheat."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step1 . 
+
+ex:Grease 
+    a po:Action ; 
+    rdfs:label "Grease."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step2 . 
+
+ex:Line 
+    a po:Action ; 
+    rdfs:label "Line."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step3 . 
+
+ex:Brush 
+    a po:Action ; 
+    rdfs:label "Brush."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step4 . 
+
+ex:Wash 
+    a po:Action ; 
+    rdfs:label "Wash."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step4 . 
+
+ex:Remove 
+    a po:Action ; 
+    rdfs:label "Remove."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:TrimOff 
+    a po:Action ; 
+    rdfs:label "Trim Off."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:Slice 
+    a po:Action ; 
+    rdfs:label "Slice."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step6 . 
+
+ex:Put 
+    a po:Action ; 
+    rdfs:label "Put."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step7 . 
+
+ex:Add 
+    a po:Action ; 
+    rdfs:label "Add."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step8 . 
+
+ex:Spread 
+    a po:Action ; 
+    rdfs:label "Spread."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step9 . 
+
+ex:Bake 
+    a po:Action ; 
+    rdfs:label "Bake."^^rdfs:Literal ; 
+    po:isActionOf ex:CookHoneyGlazedParsnips_step10 . 
+
+# Direct objects of actions 
+ex:Oven 
+    a owl:Thing ; 
+    rdfs:label "Oven."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step1 . 
+
+ex:RoastingTray 
+    a owl:Thing ; 
+    rdfs:label "Roasting Tray."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step2 , ex:CookHoneyGlazedParsnips_step3 . 
+
+  
+
+ex:Parsnips 
+    a owl:Thing ; 
+    rdfs:label "Parsnips."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step4 , ex:CookHoneyGlazedParsnips_step6 . 
+
+ex:Tops 
+    a owl:Thing ; 
+    rdfs:label "Tops."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:Roots 
+    a owl:Thing ; 
+    rdfs:label "Roots."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:VeryTip 
+    a owl:Thing ; 
+    rdfs:label "Very Tip."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step5 . 
+
+ex:Slices 
+    a owl:Thing ; 
+    rdfs:label "Slices."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step7 . 
+
+ex:OtherSelectedVegetables 
+    a owl:Thing ; 
+    rdfs:label "Other Selected Vegetables."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step8 . 
+
+ex:OtherVegetables 
+    a owl:Thing ; 
+    rdfs:label "Other Vegetables."^^rdfs:Literal ; 
+    po:isDirectObjectOf ex:CookHoneyGlazedParsnips_step9 . 
