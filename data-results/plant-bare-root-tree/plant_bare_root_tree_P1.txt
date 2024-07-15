@@ -1,0 +1,15 @@
+title: how to plant a bare root tree 
+1. unpack bare root tree from container or material 
+    - action: unpack ; direct object of action: bare root tree ; equipment: container ; equipment: material
+
+2. nip off damaged roots with sterilized pruners
+    - action: nip off ; direct object of action: damaged roots ; equipment: sterilized pruners
+
+3. set tree into bucket filled with water
+    - action: set ; direct object of action: tree ; equipment: bucket ; equipment: water
+
+4. allow tree to soak for 4-6 hours
+    - action: allow ; direct object of action: tree ; time: 4-6 hours
+
+5. dig hole larger than diameter and depth of tree and soil width
+    - action: dig ; direct object of action: hole ; equipment: shovel (implicit)

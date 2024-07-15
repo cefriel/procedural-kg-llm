@@ -1,0 +1,32 @@
+title: how to cook honey glazed parsnips 
+1. preheat oven to 160 C (320℉) degrees for 15 minutes 
+  - action: preheat ; direct object of action: oven ; time: 15 minutes 
+ 
+2. grease roasting tray 
+  - action: grease ; direct object of action: roasting tray 
+ 
+3. line roasting tray with aluminum foil 
+  - action: line ; direct object of action: roasting tray ; equipment: aluminum foil 
+ 
+4. brush and wash parsnips 
+  - action: brush ; direct object of action: parsnips 
+  - action: wash ; direct object of action: parsnips 
+ 
+5. remove tops about 6mm (1/4 inch) with leafy part and trim off roots and very tip 
+  - action: remove ; direct object of action: tops  ; equipment: knife (implicit) 
+  - action: trim off ; direct object of action: roots ; direct object of action: very tip ; equipment: knife (implicit) 
+ 
+6. slice parsnips lengthwise 
+  - action: slice ; direct object of action: parsnips ; equipment: knife (implicit) 
+ 
+7. put slices in center of wire rack in roasting tray 
+  - action: put ; direct object of action: slices ; equipment: wire rack ; equipment: roasting tray 
+ 
+8. add other selected vegetables cut into chunks 
+  - action: add ; direct object of action: other selected vegetables ; equipment: chunks ; equipment: knife (implicit) 
+ 
+9. spread other vegetables around parsnips on wire rack in roasting tray 
+  - action: spread ; direct object of action: other vegetables ; equipment: wire rack ; equipment: roasting tray 
+ 
+10. bake 
+  - action: bake ; equipment: oven (implicit) 

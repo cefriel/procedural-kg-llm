@@ -1,0 +1,35 @@
+title: how to fix a rubbing door
+1. check to see if screws in hinge plate are tight
+    - action: check ; direct object of action: screws ; equipment: hinge plate
+
+2. give screws a little twist with ratcheting screwdriver
+    - action: give ; direct object of action: screws ; equipment: ratcheting screwdriver
+
+3. lift door by grasping both handles and gently putting upward pressure
+    - action: lift ; direct object of action: door ; equipment: handles
+
+4. check to see if lifting relieves rubbing
+    - action: check ; direct object of action: rubbing
+
+5. tighten hinge screws with ratcheting screwdriver
+    - action: tighten ; direct object of action: hinge screws ; equipment: ratcheting screwdriver
+
+6. examine door and doorjamb to determine where door is rubbing
+    - action: examine ; direct object of action: door ; direct object of action: doorjamb
+
+7. look for paint worn away by door
+    - action: look for ; direct object of action: paint
+
+8. use stepladder to look at top of door
+    - action: use ; direct object of action: stepladder
+    - action: look ; direct object of action: top of door
+
+9. swing door back and forth to see if it is rubbing against carpet or making marks on floor
+    - action: swing ; direct object of action: door  
+    - action: see ; direct object of action: rubbing ; direct object of action: marks ; equipment: carpet ; equipment: floor
+
+10. mark door with pencil at spot it rubs
+    - action: mark ; direct object of action: door ; equipment: pencil
+
+11. remove door from hinges with narrow screwdriver or awl and hammer to tap out hinges
+    - action: remove ; direct object of action: door ; equipment: narrow screwdriver ; equipment: awl ; equipment: hammer
