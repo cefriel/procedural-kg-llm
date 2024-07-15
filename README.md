@@ -1,18 +1,16 @@
-# Procedural Knowledge Graph extraction with Large Language Models
-We introduce a **prompt-based pipeline** for extracting **procedural knowledge graphs** from text with LLMs.
+# Procedural Knowledge Graph extraction  from Text with Large Language Models
+We propose a **prompt-based pipeline** for extracting **procedural knowledge graphs** from text with LLMs.
 
-This pipeline is able to:
-- extract **sequential steps** from a procedure in natural language without any formatting or structure
-- extract the **tools** needed to perform each steps
-- extract the **actions** to be performed in each step
-- generate a **knowledge graph** including all triples about the procedure, its steps, actions, and tools, according to an **ontology given as reference**
+This pipeline extracts **steps**, **actions**, **objects**, **equipment** and **temporal information** from a textual procedure, in order to populate a **Procedural KG** according to a **pre-defined ontology**.
 
-![PK-CoT-evaluation](https://github.com/cefriel/procedural-kg-llm/assets/36740200/870c9f0e-95d2-4b4a-ad2e-bd280c7e597c)
+
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/9e5ffc9b-b692-4a95-92a2-7de21682b838">
+
 
 
 ## Experimental setting
 For our experiments, we:
-- used the GPT-3.5 Turbo model (the [gpt-3.5-turbo-16k version](https://platform.openai.com/docs/models/gpt-3-5-turbo))
+- used the [GPT 4o model](https://platform.openai.com/docs/models/gpt-4o)
 - set the temperature parameter to 0
 - rely on the [LangChain framework](https://www.langchain.com/)
 
@@ -23,8 +21,8 @@ We reuse [this JSON dataset available on GitHub](https://github.com/zharry29/wik
 ## How to navigate this repository
 ### pkg-extraction / notebooks
 This folder contains:
-- **pkg-extraction.ipynb**, the notebook with the whole pipeline of 7 prompts, based on Chain-of-Thought prompting
-- a subfolder **previous-prompt-eng-experiments** containing the notebooks with previous experiments during the prompt engineering refinement process
+- **pkg-extraction.ipynb**, the notebook with the pipeline of 2 prompts
+- a subfolder **preliminary-experiments** containing the notebooks with our preliminary experiments
 
 The repository defines a `docker-compose.yml` file to run the Jupyter notebooks as containers via Docker. 
 The containers can be run all at once or separately.
@@ -44,10 +42,12 @@ A `credentials.json` file should be provided in the main folder with a valid key
 
 ### data-results
 - **wikihow-json**: this folder contains the input WikiHow procedures in the original json format
-- **ontology**: this folder contains the demo procedural ontology used as reference in the experiments
+- **ontology**: this folder contains the procedural ontology used as reference in the experiments
 - **clean-flat-panel-monitor**, **fix-rubbing-door**, **cook-honey-glazed-parsnips**, **plant-bare-root-tree**: these folders contain input and output data for the 4 procedures
-- **previous-prompt-based-experiments**: this folder contains the results of previous experiments during the prompt engineering refinement process
+- **preliminary-experiments**: this folder contains the results of previous experiments during the prompt engineering refinement process
 
 ### human-assessment
-This folder contains materials and results from the human assessment of the LLM results
+This folder contains:
+- materials and results from the human assessment of the LLM results
+- a subfolder **preliminary-experiments** containing the materials and results from the human assessment of our preliminary experiments
 
