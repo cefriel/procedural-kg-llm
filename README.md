@@ -3,9 +3,7 @@ We propose a **prompt-based pipeline** for extracting **procedural knowledge gra
 
 This pipeline extracts **steps**, **actions**, **objects**, **equipment** and **temporal information** from a textual procedure, in order to populate a **Procedural KG** according to a **pre-defined ontology**.
 
-
 <img width="449" alt="image" src="https://github.com/user-attachments/assets/9e5ffc9b-b692-4a95-92a2-7de21682b838">
-
 
 
 ## Experimental setting
@@ -49,4 +47,10 @@ A `credentials.json` file should be provided in the main folder with a valid key
 This folder contains:
 - materials and results from the human assessment of the LLM results
 - a subfolder **preliminary-experiments** containing the materials and results from the human assessment of our preliminary experiments
+
+### Contributing
+
+Before contributing, please read carefully, complete and sign our [Contributor Licence Agreement](https://github.com/cefriel/contributing/blob/main/contributor-license-agreement.pdf). 
+
+When contributing to this repository, please first discuss the change you wish to make via issue or any other available method with the repository's owners.
 
