@@ -48,6 +48,13 @@ This folder contains:
 - materials and results from the human assessment of the LLM results
 - a subfolder **preliminary-experiments** containing the materials and results from the human assessment of our preliminary experiments
 
+
+### Cite as
+
+If you use the code in this repository, cite the following article: 
+
+> Carriero, V.A., Azzini, A., Baroni, I., Scrocca, M. and Celino, I., 2024. Human evaluation of procedural knowledge graph extraction from text with large language models. In International Conference on Knowledge Engineering and Knowledge Management (pp. 434-452). Cham: Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-77792-9_26.
+
 ### Contributing
 
 Before contributing, please read carefully, complete and sign our [Contributor Licence Agreement](https://github.com/cefriel/contributing/blob/main/contributor-license-agreement.pdf). 
